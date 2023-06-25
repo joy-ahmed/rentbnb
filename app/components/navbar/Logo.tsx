@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image"
 import { useRouter } from "next/navigation"
-import BrandIcon from '/public/static/images/brand.png'
+import BrandIcon from '../../../Images/brand.png'
 
 const Logo = () => {
   return (
