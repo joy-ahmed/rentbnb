@@ -6,7 +6,7 @@ interface ButtonProps {
   disabled?: boolean;
   outLine?: boolean;
   small?: boolean;
-  icon?: boolean;
+  icon?: JSX.ElementType;
 }
 
 const Button = ({ label, onClick, disabled, outLine, small, icon: Icon}: ButtonProps) => {
