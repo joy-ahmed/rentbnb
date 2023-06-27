@@ -2,8 +2,9 @@ import RegisterModal from './components/modals/RegisterModal'
 import Navbar from './components/navbar/Navbar'
 import './globals.css'
 import { Nunito } from 'next/font/google'
+import ToasterProvider from './providers/ToasterProvider'
 
-const nunito = Nunito({ subsets: ['latin'] })
+const font = Nunito({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Rentbnb',
@@ -17,7 +18,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={nunito.className}>
+      <body className={font.className}>
+        <ToasterProvider />
         <RegisterModal />
         <Navbar />
         {children}
